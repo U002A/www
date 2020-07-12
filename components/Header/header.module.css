@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+}
+
+.nav_button, .not_button {
+  display: flex;
+  height: 57px;
+  width: 57px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  transition: background 0.1s ease-in-out;
+}
+
+.nav_button:hover {
+  background: var(--gray);
+  cursor: pointer;
+}
+
+.title {
+  padding-left: var(--space);
+}
+.title span {
+  font-size: 30px;
+  font-weight: bold;
+}

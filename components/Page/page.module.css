@@ -1,0 +1,38 @@
+.main {
+  --fadeInLength: .4s;
+
+  height: 100%;
+  padding: 0 var(--space);
+  margin: 0 auto;
+  max-width: var(--content);
+  animation: loadingFadeIn ease var(--fadeInLength);
+  -webkit-animation: loadingFadeIn ease var(--fadeInLength);
+  -moz-animation: loadingFadeIn ease var(--fadeInLength);
+  -o-animation: loadingFadeIn ease var(--fadeInLength);
+  -ms-animation: loadingFadeIn ease var(--fadeInLength);
+}
+
+@keyframes loadingFadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes loadingFadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes loadingFadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes loadingFadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes loadingFadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

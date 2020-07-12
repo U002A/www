@@ -1,0 +1,9 @@
+.container {
+  margin-bottom: var(--space-m);
+  padding-left: var(--space);
+  border-left: var(--space-xs) solid var(--fg);
+}
+
+.attr::before {
+  content: '— ';
+}

@@ -1,0 +1,4 @@
+.h1 {
+  padding-top: var(--space);
+  padding-bottom: var(--space-s);
+}

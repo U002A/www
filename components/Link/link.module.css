@@ -1,0 +1,9 @@
+.link, .link:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.link:hover {
+  text-decoration: underline;
+}

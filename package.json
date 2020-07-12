@@ -1,0 +1,26 @@
+{
+  "name": "www-asterisk-ws",
+  "version": "2.0.0",
+  "author": "U002A (https://github.com/U002A)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/U002A/www/issues"
+  },
+  "homepage": "https://asterisk.ws",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "@types/react": "^16.9.42",
+    "typescript": "^3.9.6"
+  }
+}
