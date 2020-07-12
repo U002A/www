@@ -1,0 +1,15 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    
+    - name: Deploy to Test
+      run: now -n 'nonprod-www-asterisk-ws' --prod -c -t ${{ secrets.ZEIT_TOKEN }}
