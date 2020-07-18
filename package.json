@@ -1,6 +1,6 @@
 {
   "name": "www-asterisk-ws",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "U002A (https://github.com/U002A)",
   "license": "MIT",
   "bugs": {
@@ -16,7 +16,8 @@
   "dependencies": {
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-ga": "^3.1.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.22",

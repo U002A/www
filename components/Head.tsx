@@ -1,4 +1,5 @@
 import NextHead from 'next/head';
+import GoogleAnalytics from 'react-ga';
 
 interface HeadProps {
     title: string,
@@ -11,6 +12,7 @@ const defaultDesc = 'Asterisk is an experiment in building practical and beautif
 const defaultOgImage = 'https://raw.githubusercontent.com/U002A/art/master/asterisk/ogp.png';
 
 const Head = ({ title, desc = defaultDesc, ogImage = defaultOgImage, children }: HeadProps) => {
+    GoogleAnalytics.initialize('UA-172963687-1', { debug: false });
     return (
         <NextHead>
             <meta charSet='utf-8' />
@@ -37,7 +39,7 @@ const Head = ({ title, desc = defaultDesc, ogImage = defaultOgImage, children }:
             <meta name='msapplication-config' content='/icons/browserconfig.xml' />
             <meta name='theme-color' content='#ffffff' />
 
-            <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap' rel='stylesheet preload' as='font' />
+            <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap' rel='preload' as='font' crossOrigin='anonymous' />
 
             {children}
         </NextHead>
