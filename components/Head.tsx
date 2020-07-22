@@ -8,7 +8,7 @@ interface HeadProps {
 }
 
 const defaultDesc = 'Asterisk is an experiment in building practical and beautiful tools for the web.';
-const defaultOgImage = 'https://raw.githubusercontent.com/U002A/art/master/asterisk/ogp.png';
+const defaultOgImage = 'https://raw.githubusercontent.com/U002A/assets/master/asterisk/og-white.png';
 
 const Head = ({ title, desc = defaultDesc, ogImage = defaultOgImage, children }: HeadProps) => {
     return (
@@ -37,7 +37,7 @@ const Head = ({ title, desc = defaultDesc, ogImage = defaultOgImage, children }:
             <meta name='msapplication-config' content='/icons/browserconfig.xml' />
             <meta name='theme-color' content='#ffffff' />
 
-            <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap' rel='stylesheet preload' as='font' />
+            <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap' rel='preload' as='font' crossOrigin='anonymous' />
 
             {children}
         </NextHead>
